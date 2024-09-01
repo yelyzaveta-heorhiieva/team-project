@@ -1,15 +1,54 @@
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="address-container">
+      <p class="footer-text">
+        <span class="title-span">Chocolate</span> a delicious cure for a bad day
+      </p>
+      <address class="footer-address">
+        <p class="footer-address-text">Contact us</p>
+        <ul class="address-list">
+          <li class="address-list-item">
+            <a class="address-link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li class="address-list-item">
+            <a class="address-link" href="mailto:simplycthoc@gmail.com"
+              >simplycthoc@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="menu-subscribe-container">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#recipe">How it’s made?</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="./index.html">Our products</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="./index.html">Top sellers</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#feedback">Chocolate is loved</a>
+        </li>
+      </ul>
+      <form class="subscribe-form" name="subscribe">
+        <input
+          type="email"
+          class="subscribe-input"
+          name="user-email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <button class="subscribe-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
   </div>
 </footer>
