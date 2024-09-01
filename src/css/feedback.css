@@ -1,0 +1,137 @@
+.feedback {
+  padding: 60px 0;
+}
+
+.feedback-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.feedback-list {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.feedback-card {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 335px;
+  height: 200px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  padding: 56px 16px 42px 16px;
+  margin-top: -42px;
+}
+.feedback-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.feedback-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.feedback-img {
+  margin: 0 auto;
+}
+
+.slider-list {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.slider-btn {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border-radius: 50%;
+}
+
+.slider-btn.current {
+  border-radius: 8px;
+  width: 28px;
+  background-color: #fd9222;
+}
+
+.feedback-btn {
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 165px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: transparent;
+  margin: 0 auto;
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.feedback-btn:hover,
+.feedback-btn:focus {
+  background-color: #fd9222;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback {
+    padding: 80px 0;
+  }
+
+  .feedback-title {
+    margin-bottom: 50px;
+  }
+
+  .feedback-list {
+    margin-bottom: 31px;
+  }
+
+  .feedback-card {
+    width: 344px;
+  }
+
+  .feedback-btn {
+    min-width: 222px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feedback {
+    padding: 100px 0;
+  }
+
+  .feedback-list {
+    gap: 28px;
+    margin-bottom: 49px;
+  }
+
+  .feedback-list-item {
+    width: calc((100% - 28px * 2) / 3);
+  }
+
+  .feedback-card {
+    width: 100%;
+    padding: 56px 24px 24px 24px;
+  }
+
+  .slider-list {
+    display: none;
+  }
+}

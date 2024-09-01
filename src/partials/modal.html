@@ -1,0 +1,91 @@
+<div class="backdrop" id="backdrop">
+  <div class="modal">
+    <button
+      type="button"
+      class="modal-close-btn"
+      onclick="document.getElementById('backdrop').classList.remove('is-open')"
+    >
+      <svg class="close-icon" width="14" height="14">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal-text">
+      LEAVE A REVIEW ABOUT
+      <span class="orange">OUR CHOCOLATE</span>
+    </p>
+    <form>
+      <div class="form-wrraper-cont">
+        <label class="modal-form-label" for="user-name">Name</label>
+        <div class="modal-cont-input">
+          <input
+            class="modal-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            required
+          />
+          <svg class="modal-icon" width="17" height="17">
+            <use href="./images/icons.svg#user"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-wrraper-cont">
+        <label class="modal-form-label" for="user-email">Email</label>
+        <div class="modal-cont-input">
+          <input
+            class="modal-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            required
+          />
+          <svg class="modal-icon" width="17" height="17">
+            <use href="./images/icons.svg#mail"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-wrraper-cont">
+        <label class="modal-form-label" for="user-tell">Phone number</label>
+        <div class="modal-cont-input">
+          <input
+            class="modal-input"
+            type="tel"
+            id="user-tell"
+            name="user-tell"
+            required
+          />
+          <svg class="modal-icon" width="17" height="17">
+            <use href="./images/icons.svg#phone"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-wrraper-cont-coment">
+        <label class="modal-form-label" for="user-coment">Comment</label>
+        <textarea
+          class="modal-input textarea"
+          id="user-coment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <div class="modal-cont-checkbox">
+        <input
+          type="checkbox"
+          id="user-checkbox"
+          class="checkbox visually-hidden"
+        />
+        <label for="user-checkbox" class="custom-label-user-checkbox">
+          <span class="custom-checkbox"
+            ><svg class="check-icon" width="10" height="9">
+              <use href="./images/icons.svg#check"></use>
+            </svg>
+          </span>
+          <span class="privacy-policy-container">
+            I accept the terms and conditions of the
+            <a class="privacy-policy" href="#">Privacy Policy</a>
+          </span>
+        </label>
+      </div>
+      <button class="modal-submit" type="submit">Send</button>
+    </form>
+  </div>
+</div>
